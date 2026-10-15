@@ -1,9 +1,18 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: blue;
+    color: white;
+}
+
 .navbar{
-    position: relative;
+    position: sticky;
     height: 100px;
     margin: 0;
     padding: 0 1.75rem;
     box-sizing: border-box;
+    font-family: 'Lexend';
 
     display: flex;
     flex-direction: row;
@@ -17,8 +26,90 @@
     flex: 0 0 auto;
     white-space: nowrap;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.08em;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    padding: 15px;
+    transition: color 0.2s ease
+}
+
+a{
+    position: relative;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 9px;
+    height: 2px;
+    background-color: cadetblue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+a:hover::after,
+a.active::after{
+    transform: scaleX(1);
+}
+
+.footer{
+    position: sticky;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a::after{
+    left: 10px;
+    right: 10px;
+    bottom: 4px;
+}
+
+.footer a{
+    font-family: 'Lexend';
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 10px;
+    transition: color 0.25s ease;
+    color: white;
+}
+
+@keyframes slideIn{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1{
+    opacity: 0;
+    color: white;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    transform: translateY(-100px);
 }
