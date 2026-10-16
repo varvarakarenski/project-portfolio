@@ -1,0 +1,122 @@
+.featured{
+    position: relative;
+    /* inner grid = whole 56px cells, so the frame lands on a grid line on every edge */
+    width: calc(round(down, 80% - 58px, 56px) + 58px);
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    background-color: #0B5E45;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 28px #0B5E45, inset 0 0 0 29px rgba(255,255,255,.7);
+    background-image:
+        linear-gradient(120deg, transparent 999px, rgba(255,255,255,.6) 1000px, transparent 1001px),
+        linear-gradient(to top right, transparent calc(50% - 1px), rgba(255,255,255,.6) 50%, transparent calc(50% + 1px)),
+        linear-gradient(to bottom right, transparent calc(50% - 1px), rgba(255,255,255,.6) 50%, transparent calc(50% + 1px)),
+        linear-gradient(to right, rgba(255,255,255,.75) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.75) 1px, transparent 1px),
+        linear-gradient(to right, rgba(255,255,255,.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 2000px 2000px, calc(100% - 58px) calc(100% - 58px), calc(100% - 58px) calc(100% - 58px),56px 56px, 56px 56px, 28px 28px, 28px 28px;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat, repeat, repeat;
+    background-position: left 29px bottom 29px;
+    background-attachment: inherit;
+}
+
+.featured::before,
+.featured::after{
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+.featured::before{
+    top: 0;
+    left: 29px;
+    right: 20px;
+    height: 28px;
+    background: url(images/ruler-x.svg) left top no-repeat;
+}
+.featured::after{
+    left: 0;
+    top: 20px;
+    bottom: 29px;
+    width: 28px;
+    background: url(images/ruler-y.svg) left bottom no-repeat;
+}
+
+.featured h2{
+    margin: 0 0 2.5rem;
+    font-family: 'Lexend';
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    text-align: center;
+}
+
+.featuredcontent{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.featuredphoto{
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredphoto img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 4px;
+    border: 1.5px solid rgba(30, 41, 59, 0.2);
+    box-shadow: 3px 4px 0 rgba(30, 41, 59, 0.1), 0 8px 20px rgba(30, 41, 59, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featuredphoto a:hover img {
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 0 rgba(30, 41, 59, 0.15), 0 10px 24px rgba(30, 41, 59, 0.16);
+}
+
+.featureddescription {
+    flex: 1 1 55%;
+    background-color: #FED800;
+}
+
+.featureddescription h3 {
+    margin: 0 0 0.75rem;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #1f2937;
+}
+
+.featureddescription p {
+    margin: 0;
+    color: #5b5f6b;
+    line-height: 1.6;
+}
+
+@keyframes slideIn{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1{
+    opacity: 0;
+    font-family: 'Lexend';
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    transform: translateY(-100px);
+}
