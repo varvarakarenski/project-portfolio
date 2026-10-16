@@ -46,11 +46,11 @@ body{
     transition: color 0.2s ease
 }
 
-a{
+:is(.navbar, .footer) a{
     position: relative;
 }
 
-a::after{
+:is(.navbar, .footer) a::after{
     content: '';
     position: absolute;
     left: 15px;
@@ -64,8 +64,8 @@ a::after{
     transition: transform 0.2s ease;
 }
 
-a:hover::after,
-a.active::after{
+:is(.navbar, .footer) a:hover::after,
+:is(.navbar, .footer) a.active::after{
     transform: scaleX(1);
 }
 
