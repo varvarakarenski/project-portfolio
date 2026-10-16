@@ -46,6 +46,7 @@
     font-family: 'Lexend';
     font-size: clamp(2.2rem, 5vw, 3.2rem);
     text-align: center;
+    color: white;
 }
 
 .featuredcontent{
