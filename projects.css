@@ -15,3 +15,7 @@
 
     font-family: 'Lexend';
 }
+
+.featuredphoto img{
+    max-width: 200px;
+}
