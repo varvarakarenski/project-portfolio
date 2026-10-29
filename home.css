@@ -168,3 +168,7 @@ h1{
     animation-fill-mode: forwards;
     transform: translateY(-100px);
 }
+
+.desc{
+    max-width: 500px;
+}
