@@ -5,6 +5,7 @@ html, body{
 }
 
 html{
+    scrollbar-gutter: stable;
     background: url(images/tog.jpeg) center / cover fixed;
 }
 
@@ -98,4 +99,42 @@ body{
     padding: 10px;
     transition: color 0.25s ease;
     color: black;
+}
+
+
+/* paper stack (home + projects) */
+.featuredphoto{
+    flex: 1 1 30%;
+    display: grid;
+    place-items: center;
+}
+
+.featuredphoto a {
+    grid-area: 1 / 1;
+    width: 100%;
+    max-width: 280px;
+}
+
+.featuredphoto a:first-child {
+    z-index: 2;
+    transform: rotate(-2deg) translate(0, 3rem);
+}
+
+.featuredphoto a:nth-child(2) {
+    z-index: 1;
+    transform: rotate(5deg) translate(1.5rem, -2rem);
+}
+
+.featuredphoto img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 4px;
+    border: 1.5px solid rgba(30, 41, 59, 0.2);
+    box-shadow: 3px 4px 0 rgba(30, 41, 59, 0.1), 0 8px 20px rgba(30, 41, 59, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featuredphoto a:hover img {
+    transform: translateY(-3px);
+    box-shadow: 4px 6px 0 rgba(30, 41, 59, 0.15), 0 10px 24px rgba(30, 41, 59, 0.16);
 }
