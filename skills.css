@@ -1,0 +1,17 @@
+.skills p {
+    background-color: rgb(33, 124, 149);
+    border-color: rgb(74, 151, 172);
+    border-radius: 3px;
+    font-family: 'Lexend';
+    text-align: center;
+    border-width: 3px;
+    height: 160px;
+    width: 160px;
+}
+
+.languages, .tools {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    gap: 16px;
+}

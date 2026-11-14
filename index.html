@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="projects.css">
         <link rel="stylesheet" href="experience.css">
+        <link rel="stylesheet" href="skills.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar">
-            <span class="navbar-name">Varvara Karenski</span>
             <a href="#featuredsection">FEATURED</a>
             <a href="#projectsection">PROJECTS</a>
             <a href="#experiencesection">EXPERIENCE</a>
@@ -22,20 +22,6 @@
 
         <button id="togglebttn" class="toggle-btn" aria-expanded="true">☰ Menu</button>
 
-        <!--
-        <b><h1>Who is Varvara Karenski?</h1></b>
-        <div class="desc">
-            <p>As a maker, I am an aerospace enthusiast. I like getting techincal and designing my own PCBs, wiring circuits,
-            and making functional creations. I like to woodwork and to solder, and you can see a few of my projects with these
-            skills onjhdjhsajhfsjehd my 'Projects' page.</p>
-            <img src="images/paint.png">
-        </div>
-    
-        <div class="desc"><p>As a software engineer, I believe that user experience is paramount for any web app. Throughout my portfolio, 
-            you'll see a nas,jbdasbndjasjkdbnkhasdbfkjadbsfkhbsfew examples of my work that has made websites more fun, more interesting, and more accessible. 
-            <img src="images/lockedin.png"></p>
-        </div>
-    -->
         <div class = "main-content">
         <div class="featured">
             <section id="featuredsection" class="featuredcontent">
@@ -107,7 +93,7 @@
             <h3>3D Printed 'Lil Guy' Keychain</h3>
             <p>Designed in Onshape for Hack Club Fusering program.</p>
             <p>Made from a hand-drawn SVG of an original character.</p>
-            <img src="/images/lilguy.png">
+            <img src="./images/lilguy.png">
         </div>
 
         <div class="project">
@@ -130,6 +116,16 @@
         <div class="project">
             <h3>PCB Hairclip</h3>
             <p>Designed a star-shaped PCB in KiCad that features a 555 timer, two PNP transistors, and 6 LEDS that form a blinking constellation. </p>
+            <div class="flip-clip">
+                <div class="flip-clip-inner">
+                    <div class="flip-clip-front">
+                        <img src="./images/PCB.png">
+                    </div>
+                    <div class="flip-clip-back">
+                        <img src="./images/3D_View.png">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="project">
@@ -204,22 +200,26 @@
             </div>
         </section>
 
+        <h2>Skills</h2>
         <section id="skillssection" class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>MATLAB</li>
-                <li>C++</li>
-                <li>TypeScript</li>
-                <li>JavaScript</li>
-                <li>HTML/CSS</li>
-                <li>C</li>
-            </ul>
-            <ul>
-                <li>ANSYS</li>
-                <li>Onshape</li>
-                <li>KiCad</li>
-            </ul>
+            <h3>Languages</h3>
+            <div class="languages">
+                <p class="item">Python</p>
+                <p class="item">MATLAB</p>
+                <p>C++</p>
+                <p>TypeScript</p>
+                <p>JavaScript</p>
+                <p>HTML/CSS</p>
+                <p>C</p>
+                <p>SQL</p>
+            </div>
+
+            <h3>Tools</h3>
+            <div class="tools">
+                <p>ANSYS</p>
+                <p>Onshape</p>
+                <p>KiCad</p>
+            </div>
         </section>
         </div>
 

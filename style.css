@@ -114,8 +114,6 @@ body{
     color: black;
 }
 
-
-/* paper stack (home + projects) */
 .featuredphoto{
     flex: 1 1 30%;
     display: grid;
@@ -173,11 +171,14 @@ body{
     align-self: stretch;
     box-sizing: border-box;
     padding: 20px;
-    translate: -110px 0; /* half the sidebar width: recentres content in the space left of it */
-    transition: translate 0.3s ease;
+    margin-right: 0;
+    transition: margin-right 0.3s ease;
 }
 
 .main-content.expanded {
-    translate: 0 0;
+    margin-right: -220px;
 }
 
+h1, h2, h3, h4, p {
+    font-family: 'Lexend';
+}
