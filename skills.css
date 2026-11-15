@@ -6,11 +6,13 @@
     place-items: center;
 
     background-color: rgb(33, 124, 149);
-    border: 3px rgb(74, 151, 172);
+    border: 3px solid rgb(74, 151, 172);
     border-radius: 8px;
     font-family: 'Lexend';
     text-align: center;
     color: white;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .languages, .tools {
@@ -25,4 +27,19 @@
 
 .skills {
     text-align: center;
+    color: white;
+    font-family: 'Lexend';
+    max-width: 800px;
+    margin: 0 auto 48 px;
+}
+
+@media (max-width: 500px) {
+    .languages, .tools {
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-auto-rows: 100px;
+        gap: 12px;
+    }
+    .skills p {
+        font-size: 0.95rem;
+    }
 }

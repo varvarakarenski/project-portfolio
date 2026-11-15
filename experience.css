@@ -4,6 +4,7 @@
     display: grid;
     gap: 16px;
     font-family: 'Lexend';
+    color: white;
 }
 
 .experience h2 {
