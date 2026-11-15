@@ -157,7 +157,8 @@ body{
     z-index: 1001;
     font-size: 18px;
     cursor: pointer;
-    background-color: #111;
+    background-color: rgb(33, 124, 149);
+    border-radius: 8px;
     color: white;
     border: none;
     padding: 10px 15px;

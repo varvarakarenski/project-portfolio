@@ -1,17 +1,28 @@
 .skills p {
+    box-sizing: border-box;
+    margin: 0;
+
+    display: grid;
+    place-items: center;
+
     background-color: rgb(33, 124, 149);
-    border-color: rgb(74, 151, 172);
-    border-radius: 3px;
+    border: 3px rgb(74, 151, 172);
+    border-radius: 8px;
     font-family: 'Lexend';
     text-align: center;
-    border-width: 3px;
-    height: 160px;
-    width: 160px;
+    color: white;
 }
 
 .languages, .tools {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 150px;
+    grid-template-columns: repeat(auto-fit, 140px);
+    grid-auto-rows: 140px;
     gap: 16px;
+    justify-content: center;
+    max-width: 608px;
+    margin: 0 auto 32px;
+}
+
+.skills {
+    text-align: center;
 }

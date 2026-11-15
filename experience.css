@@ -1,7 +1,49 @@
-.mit{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.experience {
+    max-width: 800px;
+    margin: 0 auto 48px;
+    display: grid;
+    gap: 16px;
+    font-family: 'Lexend';
+}
+
+.experience h2 {
+    text-align: center;
+}
+
+.job {
+    border: 3px solid rgb(74,151, 172);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgb(33, 124, 149);
+}
+
+.job summary {
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
+    column-gap: 16px;
+    padding: 16px 20px;
+    background-color: rgb(33, 124, 149);
+    color: white;
+    cursor: pointer;
+    list-style: none;
+}
+
+.job summary::-webkit-details-marker {
+    display: none;
+}
+
+.job summary h3 {
+    grid-column: 1;
+    margin: 0;
+}
+
+.job .meta {
+    grid-column: 1;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.job-details {
+    background-color: rgb(90, 166, 187);
 }
