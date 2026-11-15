@@ -99,6 +99,7 @@
                 <p>Wrote a Python script that fetches data from an IMU to operate a PiCam3.</p>
                 <p>The RPi 5 analyzes captured images through image subtraction to assess the location and size of simulated lunar surface changes.</p>
                 <img src="./images/kaputnik.jpeg" alt="1U model CubeSat">
+                <a href="https://github.com/varvarakarenski/kaputnik_repo" target="_blank" rel="noopener">View on GitHub</a>
             </div>
 
             <div class="project">
@@ -120,6 +121,8 @@
                 <h3>OpenCV Traffic Management System</h3>
                 <p>Built an automated traffic system using OpenCV/ML for real-time vehicle detection and flow-rate analysis.</p>
                 <p>Programmed conditional logic for traffic light function in C++.</p>
+                <img src="./images/lockedin.JPG">
+                <a href="https://github.com/varvarakarenski/BP_TrafficLight" target="_blank" rel="noopener">View on GitHub</a>
             </div>
             </section>
 
@@ -127,32 +130,49 @@
                 <div class="card">
                     <h3>Claude Bell</h3>
                     <p>Bell widget that rings when Claude is done with a prompt, linked to local Claude config files.</p>
+                    <div class="bell-animation">
+                        <img src="./images/bellframes/bell1.png">
+                        <img src="./images/bellframes/bell2.png">
+                        <img src="./images/bellframes/bell3.png">
+                        <img src="./images/bellframes/bell4.png">
+                        <img src="./images/bellframes/bell5.png">
+                        <img src="./images/bellframes/bell6.png">
+                        <img src="./images/bellframes/bell7.png">
+                        <img src="./images/bellframes/bell8.png">
+                    </div>
+                    <a href="https://github.com/varvarakarenski/claude-bell" target="_blank" rel="noopener">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>ISS Tracker</h3>
                     <p>Keep track of where the International Space Station is and see information about its past and predicted trajectory and crew members onboard.</p>
                     <img src="./images/iss.gif" alt="ISS Tracker demo">
+                    <a href="https://github.com/varvarakarenski/iss-tracker" target="_blank" rel="noopener">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>Squiggle</h3>
                     <p>A VS Code extension that explains what an error means, why it could've happened, and how to fix it.</p>
+                    <img src="./images/squiggle_demo.png" alt="Squiggle demo">
                     <a href="https://marketplace.visualstudio.com/items?itemName=varvarakarenski.squiggle-vscode" target="_blank" rel="noopener">Find Squiggle on VS Code marketplace</a>
+                    <a href="https://github.com/varvarakarenski/squiggle" target="_blank" rel="noopener">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>Her Word</h3>
                     <p>A web app for women in STEM to judge an environment's safety and welcoming atmosphere before joining.</p>
                     <img src="./images/her-word.png" alt="Her Word app screenshot">
+                    <a href="https://github.com/varvarakarenski/her-word" target="_blank" rel="noopener">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>ASCII Art Converter</h3>
                     <p>A webpage that converts images into ASCII text art.</p>
                     <img src="./images/ascii-art.png" alt="ASCII Art Converter screenshot">
                     <a href="https://varvarakarenski.github.io/ascii-art/" target="_blank" rel="noopener">See it for yourself</a>
+                    <a href="https://github.com/varvarakarenski/ascii-art" target="_blank" rel="noopener">View on GitHub</a>
                 </div>
                 <div class="card">
                     <h3>Airfoil Sandbox</h3>
                     <p>A website that allows users to visualize 4-digit NACA airfoils.</p>
                     <img src="./images/airfoil.png" alt="Airfoil Sandbox screenshot">
+                    <a href="https://github.com/varvarakarenski/airfoil-sandbox" target="_blank" rel="noopener">View on GitHub</a>
                 </div>
             </div>
 
@@ -231,12 +251,10 @@
             }).observe(mat);
 
             const sidebar = document.querySelector(".navbar");
-            const main = document.querySelector(".main-content");
             const toggleBtn = document.getElementById("togglebttn");
 
             toggleBtn.addEventListener("click", () => {
                 const collapsed = sidebar.classList.toggle("collapsed");
-                main.classList.toggle("expanded", collapsed);
                 toggleBtn.setAttribute("aria-expanded", !collapsed);
             });
         </script>

@@ -5,6 +5,7 @@ body{
 .featured{
     position: relative;
     width: calc(round(down, 80% - 58px, 56px) + 58px);
+    margin: 0 auto;
     padding: 4rem 3rem;
     box-sizing: border-box;
     background-color: #0B5E45;

@@ -11,6 +11,9 @@ Also a teensy bit of Javascript for interactive navigation.
 - Pretty cutting-mat background for featured work
 - Blueprint-style background for projects
 - Collapsible menu
+- Cute buttons for skills
+- Manila folder design for experience
+- Animations on hover
 
 ### Sections:
 - Featured: my most recent work or the work I'm most proud of
